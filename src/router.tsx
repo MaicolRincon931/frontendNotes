@@ -11,10 +11,11 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
-            <Route path="/" element={<DashboardView/>} index />
+            <Route path="/notes/get-notes" element={<DashboardView/>} index />
         </Route>
         <Route element={<AuthLayout />}>
             <Route path="/auth/login" element={<LoginView/>} index />
+            <Route path="/" element={<LoginView/>} index />
             <Route path="/auth/signup" element={<SignUpView/>} />
         </Route>
       </Routes>
