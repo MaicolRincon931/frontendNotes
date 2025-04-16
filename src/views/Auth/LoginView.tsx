@@ -29,7 +29,7 @@ const LoginView = () => {
       localStorage.setItem('refreshToken', refreshToken);
 
       toast.success("Inicio de sesión exitoso");
-      navigate('/');
+      navigate('/notes/get-notes');
     } catch (err: any) {
       const message =
         err.response?.data?.message ||
